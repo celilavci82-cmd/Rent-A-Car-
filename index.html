@@ -22,7 +22,8 @@
     .hero h1{font-size:32px;margin:0 0 8px}
     .hero p{color:var(--muted);margin:0 0 14px}
     .card{background:var(--card);border-radius:12px;box-shadow:0 8px 20px rgba(10,20,14,0.06);padding:16px}
-    .fleet{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+    .fleet{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px}
+    @media (max-width:900px){.fleet{grid-template-columns:repeat(2,1fr);}}
     .vehicle{display:flex;flex-direction:column;gap:8px}
     .vehicle img{width:100%;height:150px;object-fit:cover;border-radius:10px}
     .vehicle h4{margin:6px 0 0;font-size:16px}
@@ -70,7 +71,7 @@
       <p>Şehir içi ekonomik araçlardan VIP sınıfa kadar geniş araç seçenekleri. Tüm araçlar sigortalıdır.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
         <a class="cta-btn" href="#fleet">Araçları Gör</a>
-        <a class="card" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;text-decoration:none">Destek: 0554 534 5219</a>
+        <a class="card" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;text-decoration:none">Destek: 0554 534 5819</a>
       </div>
     </div>
     <div style="width:320px">
@@ -86,373 +87,277 @@
     <p style="color:var(--muted);margin-bottom:12px"/em></p>
     <div class="fleet">
 
-      <!-- 1 --> 
-      <article class="vehicle card">
-        <img src="image/audi-a4.jpg" alt="Audi A4">
-        <h4>Audi A4</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 2 -->
-      <article class="vehicle card">
-        <img src="image/audi-a6.jpg" alt="Audi A6">
-        <h4>Audi A6</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 3 -->
-      <article class="vehicle card">
-        <img src="image/bmw-320i.jpg" alt="BMW 320i">
-        <h4>BMW 320i</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 4 -->
-      <article class="vehicle card">
-        <img src="image/bmw-520i.jpg" alt="BMW 520i">
-        <h4>BMW 520i</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.400 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 5 -->
-      <article class="vehicle card">
-        <img src="image/bmw-x1.jpg" alt="BMW X1">
-        <h4>BMW X1</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.100 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 6 -->
-      <article class="vehicle card">
-        <img src="image/citroen-berlingo.jpg" alt="Citroen Berlingo">
-        <h4>Citroen Berlingo</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.300 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 7 -->
       <article class="vehicle card">
         <img src="image/citroen-c3.jpg" alt="Citroen C3">
         <h4>Citroen C3</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 8 -->
-      <article class="vehicle card">
-        <img src="image/citroen-spacetourer.jpg" alt="Citroen Spacetourer">
-        <h4>Citroen Spacetourer</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 9 -->
-      <article class="vehicle card">
-        <img src="image/dacia-duster.jpg" alt="Dacia Duster">
-        <h4>Dacia Duster</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 10 -->
-      <article class="vehicle card">
-        <img src="image/fiat-doblo.jpg" alt="Fiat Doblo">
-        <h4>Fiat Doblo</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 11 -->
       <article class="vehicle card">
         <img src="image/fiat-egea.jpg" alt="Fiat Egea">
         <h4>Fiat Egea</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 12 -->
-      <article class="vehicle card">
-        <img src="image/fiat-scudo.jpg" alt="Fiat Scudo">
-        <h4>Fiat Scudo</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 13 -->
-      <article class="vehicle card">
-        <img src="image/ford-fiesta.jpg" alt="Ford Fiesta">
-        <h4>Ford Fiesta</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 14 -->
-      <article class="vehicle card">
-        <img src="image/ford-tourneo-courier.jpg" alt="Ford Tourneo Courier">
-        <h4>Ford Tourneo Courier</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 15 -->
-      <article class="vehicle card">
-        <img src="image/ford-tourneo-custom.jpg" alt="Ford Tourneo Custom">
-        <h4>Ford Tourneo Custom</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 16 -->
       <article class="vehicle card">
         <img src="image/hyundai-i20.jpg" alt="Hyundai i20">
         <h4>Hyundai i20</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 17 -->
-      <article class="vehicle card">
-        <img src="image/hyundai-staria.jpg" alt="Hyundai Staria">
-        <h4>Hyundai Staria</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 18 -->
-      <article class="vehicle card">
-        <img src="image/hyundai-tucson.jpg" alt="Hyundai Tucson">
-        <h4>Hyundai Tucson</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 19 -->
-      <article class="vehicle card">
-        <img src="image/jaguar-xf.jpg" alt="Jaguar XF">
-        <h4>Jaguar XF</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺3.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 20 -->
-      <article class="vehicle card">
-        <img src="image/kia.sportage.jpg" alt="Kia Sportage">
-        <h4>Kia Sportage</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 21 -->
-      <article class="vehicle card">
-        <img src="image/kia-rio.jpg" alt="Kia Rio">
-        <h4>Kia Rio</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 22 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-e200.jpg" alt="Mercedes E200">
-        <h4>Mercedes E200</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 23 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-c200.jpg" alt="Mercedes C200">
-        <h4>Mercedes C200</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-<!-- **Burada 1/2 bitiyor — 2/2 ile devam edilecek (kalan araçlar, kampanyalar, lokasyonlar, footer).** -->
-      <!-- 24 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-gla.jpg" alt="Mercedes GLA">
-        <h4>Mercedes GLA</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.300 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 25 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-sprinter.jpg" alt="Mercedes Sprinter">
-        <h4>Mercedes Sprinter</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 26 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-vclass.jpg" alt="Mercedes V-Class">
-        <h4>Mercedes V-Class</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 27 -->
-      <article class="vehicle card">
-        <img src="image/mercedes-vito.jpg" alt="Mercedes Vito">
-        <h4>Mercedes Vito</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.850 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 28 -->
-      <article class="vehicle card">
-        <img src="image/nissan-qashqai.jpg" alt="Nissan Qashqai">
-        <h4>Nissan Qashqai</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 29 -->
       <article class="vehicle card">
         <img src="image/opel-corsa.jpg" alt="Opel Corsa">
         <h4>Opel Corsa</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 31 -->
-      <article class="vehicle card">
-        <img src="image/peugeot-3008.jpg" alt="Peugeot 3008">
-        <h4>Peugeot 3008</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 32 -->
-      <article class="vehicle card">
-        <img src="image/peugeot-rifter.jpg" alt="Peugeot Rifter">
-        <h4>Peugeot Rifter</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 33 -->
-      <article class="vehicle card">
-        <img src="image/peugeot-traveller.jpg" alt="Peugeot Traveller">
-        <h4>Peugeot Traveller</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 34 -->
-      <article class="vehicle card">
-        <img src="image/renault-captur.jpg" alt="Renault Captur">
-        <h4>Renault Captur</h4>
-        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.100 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 35 -->
       <article class="vehicle card">
         <img src="image/renault-clio.jpg" alt="Renault Clio">
         <h4>Renault Clio</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 36 -->
       <article class="vehicle card">
-        <img src="image/renault-kangoo.jpg" alt="Renault Kangoo">
-        <h4>Renault Kangoo</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.250 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <img src="image/ford-fiesta.jpg" alt="Ford Fiesta">
+        <h4>Ford Fiesta</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 37 -->
       <article class="vehicle card">
-        <img src="image/renault-master.jpg" alt="Renault Master">
-        <h4>Renault Master</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <img src="image/kia-rio.jpg" alt="Kia Rio">
+        <h4>Kia Rio</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 38 -->
-      <article class="vehicle card">
-        <img src="image/renault-trafic.jpg" alt="Renault Trafic">
-        <h4>Renault Trafic</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.600 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 39 -->
       <article class="vehicle card">
         <img src="image/seat-ibiza.jpg" alt="Seat Ibiza">
         <h4>Seat Ibiza</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 40 -->
       <article class="vehicle card">
-        <img src="image/skoda-superb.jpg" alt="Skoda Superb">
-        <h4>Skoda Superb</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.000 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <img src="image/renault-captur.jpg" alt="Renault Captur">
+        <h4>Renault Captur</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.100 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 41 -->
-      <article class="vehicle card">
-        <img src="image/toyota-alphard.jpg" alt="Toyota Alphard">
-        <h4>Toyota Alphard</h4>
-        <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 42 -->
-      <article class="vehicle card">
-        <img src="image/toyota-proace.jpg" alt="Toyota Proace">
-        <h4>Toyota Proace</h4>
-        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 43 -->
-      <article class="vehicle card">
-        <img src="image/toyota-rav4.jpg" alt="Toyota RAV4">
-        <h4>Toyota RAV4</h4>
-        <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><button class="cta-btn">Hemen Ara</button></div>
-      </article>
-
-      <!-- 44 -->
       <article class="vehicle card">
         <img src="image/toyota-yaris.jpg" alt="Toyota Yaris">
         <h4>Toyota Yaris</h4>
         <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.150 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺1.150 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 45 -->
       <article class="vehicle card">
         <img src="image/volkswagen-caddy.jpg" alt="Volkswagen Caddy">
         <h4>Volkswagen Caddy</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.200 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺1.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 46 -->
+      <article class="vehicle card">
+        <img src="image/fiat-doblo.jpg" alt="Fiat Doblo">
+        <h4>Fiat Doblo</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/peugeot-rifter.jpg" alt="Peugeot Rifter">
+        <h4>Peugeot Rifter</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/renault-kangoo.jpg" alt="Renault Kangoo">
+        <h4>Renault Kangoo</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.250 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/dacia-duster.jpg" alt="Dacia Duster">
+        <h4>Dacia Duster</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/ford-tourneo-courier.jpg" alt="Ford Tourneo Courier">
+        <h4>Ford Tourneo Courier</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/peugeot-traveller.jpg" alt="Peugeot Traveller">
+        <h4>Peugeot Traveller</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/citroen-spacetourer.jpg" alt="Citroen Spacetourer">
+        <h4>Citroen Spacetourer</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/nissan-qashqai.jpg" alt="Nissan Qashqai">
+        <h4>Nissan Qashqai</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/fiat-scudo.jpg" alt="Fiat Scudo">
+        <h4>Fiat Scudo</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/toyota-proace.jpg" alt="Toyota Proace">
+        <h4>Toyota Proace</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/renault-trafic.jpg" alt="Renault Trafic">
+        <h4>Renault Trafic</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.600 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
       <article class="vehicle card">
         <img src="image/volkswagen-passat.jpg" alt="Volkswagen Passat">
         <h4>Volkswagen Passat</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
-      <!-- 47 -->
+      <article class="vehicle card">
+        <img src="image/ford-tourneo-custom.jpg" alt="Ford Tourneo Custom">
+        <h4>Ford Tourneo Custom</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/kia.sportage.jpg" alt="Kia Sportage">
+        <h4>Kia Sportage</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/peugeot-3008.jpg" alt="Peugeot 3008">
+        <h4>Peugeot 3008</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-sprinter.jpg" alt="Mercedes Sprinter">
+        <h4>Mercedes Sprinter</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-vito.jpg" alt="Mercedes Vito">
+        <h4>Mercedes Vito</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺1.850 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/audi-a4.jpg" alt="Audi A4">
+        <h4>Audi A4</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/toyota-rav4.jpg" alt="Toyota RAV4">
+        <h4>Toyota RAV4</h4>
+        <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-gla.jpg" alt="Mercedes GLA">
+        <h4>Mercedes GLA</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.300 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/bmw-520i.jpg" alt="BMW 520i">
+        <h4>BMW 520i</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
       <article class="vehicle card">
         <img src="image/volvo-s60.jpg" alt="Volvo S60">
         <h4>Volvo S60</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><button class="cta-btn">Hemen Ara</button></div>
+        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-c200.jpg" alt="Mercedes C200">
+        <h4>Mercedes C200</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-e200.jpg" alt="Mercedes E200">
+        <h4>Mercedes E200</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/mercedes-vclass.jpg" alt="Mercedes V-Class">
+        <h4>Mercedes V-Class</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/audi-a6.jpg" alt="Audi A6">
+        <h4>Audi A6</h4>
+        <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/toyota-alphard.jpg" alt="Toyota Alphard">
+        <h4>Toyota Alphard</h4>
+        <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+      </article>
+
+      <article class="vehicle card">
+        <img src="image/jaguar-xf.jpg" alt="Jaguar XF">
+        <h4>Jaguar XF</h4>
+        <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
+        <div class="meta"><div style="font-weight:800">₺3.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
       </article>
 
     </div> <!-- fleet end -->
@@ -512,7 +417,7 @@
       <h3>İletişim Bilgileri</h3>
       <p><strong>ArvesFiloCar</strong><br>
       info@arvesfilocar.com<br>
-      Tel: 0554 534 5219</p>
+      Tel: 0554 534 5819</p>
 
       <p style="margin-top:12px">
         <a href="#">Hakkımızda</a> •
@@ -531,4 +436,3 @@
 
 </body>
 </html>
-
