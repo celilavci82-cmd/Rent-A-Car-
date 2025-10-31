@@ -38,6 +38,15 @@
     .whatsapp-fixed{position:fixed;right:18px;bottom:18px;z-index:80}
     @media (max-width:900px){.hero{flex-direction:column;align-items:flex-start}nav a{display:none}}
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11380976447"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11380976447');
+  </script>
+
 </head>
 <body>
 
@@ -418,7 +427,16 @@
       <p><strong>ArvesFiloCar</strong><br>
       info@arvesfilocar.com<br>
       Tel: 0554 534 5819</p>
+<form action="#" method="POST">
+  <input type="text" name="isim" placeholder="İsminiz" required>
+  <input type="email" name="email" placeholder="E-posta adresiniz" required>
+  <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
 
+  <!-- reCAPTCHA kutusu -->
+  <div class="g-recaptcha" data-sitekey="6LcCfPUrAAAAANN7FeVOz1k6WVtR1Qs46AhAAwe5"></div>
+
+  <button type="submit">Gönder</button>
+</form>
       <p style="margin-top:12px">
         <a href="#">Hakkımızda</a> •
         <a href="#">Sözleşmeler</a> •
@@ -433,6 +451,6 @@
 
   <!-- WhatsApp sabit buton -->
   <a href="https://wa.me/905545345819" target="_blank" class="whatsapp-fixed" style="position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;z-index:999">💬 WhatsApp</a>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
