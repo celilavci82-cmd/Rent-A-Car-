@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ArvesFiloCar - Araç Kiralama</title>
-  <meta name="description" content="ArvesFiloCar - Türkiye çapında geniş filo ile araç kiralama">
+  <title>OnlineKiralama - Araç Kiralama</title>
+  <meta name="description" content="OnlineKiralama - Türkiye çapında geniş filo ile araç kiralama">
   <style>
     :root{--accent:#007a3d;--muted:#6b7280;--card:#ffffff;--bg:#f6faf6}
     *{box-sizing:border-box}
@@ -37,7 +37,26 @@
     footer{padding:28px 0;background:#032012;color:#dff6e6;margin-top:18px}
     .whatsapp-fixed{position:fixed;right:18px;bottom:18px;z-index:80}
     @media (max-width:900px){.hero{flex-direction:column;align-items:flex-start}nav a{display:none}}
-  </style>
+  
+:root{--accent:#c00000;--muted:#6b7280;--card:#ffffff;--bg:#fff}
+header{background:#c00000!important}
+.cta-btn{background:#c00000!important}
+@media (max-width:900px){
+  .fleet{grid-template-columns:1fr!important;}
+}
+.vehicle img{height:180px!important;object-fit:contain!important}
+
+
+/* SADECE WHATSAPP BUTONLARI YEŞİL */
+.wh-btn,
+.whatsapp-fixed,
+a[href*="wa.me"],
+.cta-btn[href*="wa.me"]{
+  background:#25D366 !important;
+  color:#ffffff !important;
+}
+
+</style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11380976447"></script>
   <script>
@@ -53,7 +72,7 @@
 <header>
   <div class="container nav">
     <div style="display:flex;align-items:center;gap:14px">
-      <div class="logo">ArvesFiloCar</div>
+      <div class="logo">OnlineKiralama</div>
       <div style="font-size:13px;color:rgba(255,255,255,0.9)">Geniş filo • Şeffaf fiyat • 7/24 Destek</div>
     </div>
 
@@ -67,7 +86,7 @@
         <a href="#contact">İletişim</a>
       </nav>
       <div class="top-actions">
-        <a class="wh-btn" href="https://wa.me/905545345819" target="_blank">WhatsApp</a>
+        <a class="wh-btn" href="https://wa.me/905541552180" target="_blank">WhatsApp</a>
       </div>
     </div>
   </div>
@@ -76,11 +95,11 @@
 <main class="container">
   <section class="hero">
     <div class="left">
-      <h1>Geniş filo, güvenilir kiralama — ArvesFiloCar</h1>
+      <h1>Geniş filo, güvenilir kiralama — OnlineKiralama</h1>
       <p>Şehir içi ekonomik araçlardan VIP sınıfa kadar geniş araç seçenekleri. Tüm araçlar sigortalıdır.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
         <a class="cta-btn" href="#fleet">Araçları Gör</a>
-        <a class="card" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;text-decoration:none">Destek: 0554 534 5819</a>
+        <a class="card" style="display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;text-decoration:none">Destek: 05541552180</a>
       </div>
     </div>
     <div style="width:320px">
@@ -100,273 +119,273 @@
         <img src="image/citroen-c3.jpg" alt="Citroen C3">
         <h4>Citroen C3</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/fiat-egea.jpg" alt="Fiat Egea">
         <h4>Fiat Egea</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/hyundai-i20.jpg" alt="Hyundai i20">
         <h4>Hyundai i20</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/opel-corsa.jpg" alt="Opel Corsa">
         <h4>Opel Corsa</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺950 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/renault-clio.jpg" alt="Renault Clio">
         <h4>Renault Clio</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/ford-fiesta.jpg" alt="Ford Fiesta">
         <h4>Ford Fiesta</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.000 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/kia-rio.jpg" alt="Kia Rio">
         <h4>Kia Rio</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/seat-ibiza.jpg" alt="Seat Ibiza">
         <h4>Seat Ibiza</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.050 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/renault-captur.jpg" alt="Renault Captur">
         <h4>Renault Captur</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.100 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.100 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/toyota-yaris.jpg" alt="Toyota Yaris">
         <h4>Toyota Yaris</h4>
         <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.150 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.150 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/volkswagen-caddy.jpg" alt="Volkswagen Caddy">
         <h4>Volkswagen Caddy</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.200 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/fiat-doblo.jpg" alt="Fiat Doblo">
         <h4>Fiat Doblo</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/peugeot-rifter.jpg" alt="Peugeot Rifter">
         <h4>Peugeot Rifter</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.350 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/renault-kangoo.jpg" alt="Renault Kangoo">
         <h4>Renault Kangoo</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.250 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.250 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/dacia-duster.jpg" alt="Dacia Duster">
         <h4>Dacia Duster</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/ford-tourneo-courier.jpg" alt="Ford Tourneo Courier">
         <h4>Ford Tourneo Courier</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.400 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/peugeot-traveller.jpg" alt="Peugeot Traveller">
         <h4>Peugeot Traveller</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/citroen-spacetourer.jpg" alt="Citroen Spacetourer">
         <h4>Citroen Spacetourer</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/nissan-qashqai.jpg" alt="Nissan Qashqai">
         <h4>Nissan Qashqai</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.800 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/fiat-scudo.jpg" alt="Fiat Scudo">
         <h4>Fiat Scudo</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/toyota-proace.jpg" alt="Toyota Proace">
         <h4>Toyota Proace</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.700 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/renault-trafic.jpg" alt="Renault Trafic">
         <h4>Renault Trafic</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.600 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.600 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/volkswagen-passat.jpg" alt="Volkswagen Passat">
         <h4>Volkswagen Passat</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/ford-tourneo-custom.jpg" alt="Ford Tourneo Custom">
         <h4>Ford Tourneo Custom</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/kia.sportage.jpg" alt="Kia Sportage">
         <h4>Kia Sportage</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/peugeot-3008.jpg" alt="Peugeot 3008">
         <h4>Peugeot 3008</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-sprinter.jpg" alt="Mercedes Sprinter">
         <h4>Mercedes Sprinter</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.900 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-vito.jpg" alt="Mercedes Vito">
         <h4>Mercedes Vito</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Manuel • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺1.850 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺1.850 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/audi-a4.jpg" alt="Audi A4">
         <h4>Audi A4</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/toyota-rav4.jpg" alt="Toyota RAV4">
         <h4>Toyota RAV4</h4>
         <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.200 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-gla.jpg" alt="Mercedes GLA">
         <h4>Mercedes GLA</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.300 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.300 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/bmw-520i.jpg" alt="BMW 520i">
         <h4>BMW 520i</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.400 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.400 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/volvo-s60.jpg" alt="Volvo S60">
         <h4>Volvo S60</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-c200.jpg" alt="Mercedes C200">
         <h4>Mercedes C200</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.500 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-e200.jpg" alt="Mercedes E200">
         <h4>Mercedes E200</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/mercedes-vclass.jpg" alt="Mercedes V-Class">
         <h4>Mercedes V-Class</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.700 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/audi-a6.jpg" alt="Audi A6">
         <h4>Audi A6</h4>
         <div style="color:var(--muted);font-size:13px">Dizel • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/toyota-alphard.jpg" alt="Toyota Alphard">
         <h4>Toyota Alphard</h4>
         <div style="color:var(--muted);font-size:13px">Hibrit • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺2.800 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
       <article class="vehicle card">
         <img src="image/jaguar-xf.jpg" alt="Jaguar XF">
         <h4>Jaguar XF</h4>
         <div style="color:var(--muted);font-size:13px">Benzin • Otomatik • Sınırsız KM</div>
-        <div class="meta"><div style="font-weight:800">₺3.000 / gün</div><a class="cta-btn" href="tel:05545345819">Hemen Ara</a></div>
+        <div class="meta" style="flex-direction:column;gap:8px;align-items:stretch"><div style="font-weight:800">₺3.000 / gün</div><a class="cta-btn" href="tel:05541552180">Hemen Ara</a><a class="cta-btn" style="background:#25D366" href="https://wa.me/905541552180" target="_blank">WhatsApp</a></div>
       </article>
 
     </div> <!-- fleet end -->
@@ -409,7 +428,7 @@
 
   <!-- Neden bizi tercih etmelisiniz -->
   <section id="neden">
-    <h2>Neden ArvesFiloCar'ı Tercih Etmelisiniz?</h2>
+    <h2>Neden OnlineKiralama'ı Tercih Etmelisiniz?</h2>
     <div class="card">
       <ul>
         <li>Geniş İş Ortağı Ağı ve Bölgesel Hizmet</li>
@@ -424,9 +443,9 @@
   <footer id="contact">
     <div class="container">
       <h3>İletişim Bilgileri</h3>
-      <p><strong>ArvesFiloCar</strong><br>
+      <p><strong>OnlineKiralama</strong><br>
       info@arvesfilocar.com<br>
-      Tel: 0554 534 5819</p>
+      Tel: 05541552180</p>
 <form action="#" method="POST">
   <input type="text" name="isim" placeholder="İsminiz" required>
   <input type="email" name="email" placeholder="E-posta adresiniz" required>
@@ -444,12 +463,25 @@
         <a href="#">S.S.S</a>
       </p>
 
-      <p style="font-size:13px;color:rgba(255,255,255,0.7);margin-top:12px">© 2025 ArvesFiloCar - Tüm Hakları Saklıdır</p>
+      <p style="font-size:13px;color:rgba(255,255,255,0.7);margin-top:12px">© 2025 OnlineKiralama - Tüm Hakları Saklıdır</p>
     </div>
   </footer>
 
   <!-- WhatsApp sabit buton -->
-  <a href="https://wa.me/905545345819" target="_blank" class="whatsapp-fixed" style="position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;z-index:999">💬 WhatsApp</a>
+  <a href="https://wa.me/905541552180" target="_blank" class="whatsapp-fixed" style="position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;z-index:999">WhatsApp</a>
 
+
+<a href="https://wa.me/905541552180" target="_blank"
+ style="position:fixed;right:18px;bottom:70px;background:#25D366;color:#fff;
+ padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;z-index:999">
+ WhatsApp
+</a>
+
+<a href="tel:05541552180"
+ style="position:fixed;right:18px;bottom:18px;background:#c00000;color:#fff;
+ padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;z-index:999">
+ Hemen Ara
+</a>
 </body>
+
 </html>
